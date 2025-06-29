@@ -1,3 +1,4 @@
+/* === Layout === */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -5,7 +6,7 @@ body {
   color: #333;
 }
 
-.page-container {
+.pageContainer {
   max-width: 600px;
   margin: 3rem auto;
   padding: 2rem;
@@ -14,12 +15,14 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+/* === Títulos === */
 h1 {
   text-align: center;
   margin-bottom: 2rem;
 }
 
-input[type="text"] {
+/* === Formulários === */
+.inputField {
   width: 100%;
   padding: 0.8rem;
   font-size: 1rem;
@@ -28,14 +31,15 @@ input[type="text"] {
   margin-bottom: 1rem;
 }
 
-.button-group {
+/* === Botões === */
+.buttonGroup {
   display: flex;
   justify-content: center;
   gap: 1rem;
   margin-bottom: 1.5rem;
 }
 
-button {
+.buttonPrimary {
   padding: 0.6rem 1.2rem;
   font-size: 1rem;
   background-color: #0052cc;
@@ -46,17 +50,37 @@ button {
   transition: background-color 0.2s ease-in-out;
 }
 
-button:hover {
+.buttonPrimary:hover {
   background-color: #003d99;
 }
 
-.error {
+/* === Erros === */
+.errorMessage {
   color: red;
   text-align: center;
   margin-bottom: 1rem;
 }
 
-.result {
+.errorBox {
+  background-color: #ffe5e5;
+  border: 1px solid #ff4d4d;
+  color: #b30000;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 16px;
+  max-width: 500px;
+}
+.errorBox h4 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+.errorBox p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* === Resultados === */
+.resultContainer {
   background-color: #f0f0f0;
   padding: 1rem;
   border-radius: 4px;
@@ -64,12 +88,13 @@ button:hover {
   word-break: break-word;
 }
 
-.image-preview {
+/* === Imagem gerada === */
+.imagePreview {
   text-align: center;
   margin-top: 1rem;
 }
 
-.image-preview img {
+.imagePreview img {
   max-width: 100%;
   height: auto;
   margin-top: 1rem;
