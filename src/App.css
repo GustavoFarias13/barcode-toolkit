@@ -1,4 +1,5 @@
 /* === Layout === */
+/* Basic page body styling: reset margin, set font, background and text color */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -6,6 +7,7 @@ body {
   color: #333;
 }
 
+/* Container for the main page content, centered with max width and padding */
 .pageContainer {
   max-width: 600px;
   margin: 3rem auto;
@@ -15,13 +17,15 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* === Títulos === */
+/* === Headings === */
+/* Center align main headings and add spacing below */
 h1 {
   text-align: center;
   margin-bottom: 2rem;
 }
 
-/* === Formulários === */
+/* === Forms === */
+/* Styling for input fields to fill width, with padding and border */
 .inputField {
   width: 100%;
   padding: 0.8rem;
@@ -31,7 +35,8 @@ h1 {
   margin-bottom: 1rem;
 }
 
-/* === Botões === */
+/* === Buttons === */
+/* Container to horizontally align buttons with spacing */
 .buttonGroup {
   display: flex;
   justify-content: center;
@@ -39,6 +44,7 @@ h1 {
   margin-bottom: 1.5rem;
 }
 
+/* Primary button style: padding, font, background, color, rounded corners */
 .buttonPrimary {
   padding: 0.6rem 1.2rem;
   font-size: 1rem;
@@ -50,17 +56,20 @@ h1 {
   transition: background-color 0.2s ease-in-out;
 }
 
+/* Darker background on hover for button */
 .buttonPrimary:hover {
   background-color: #003d99;
 }
 
+/* Disabled button style: greyed out and cursor not-allowed */
 .buttonPrimary:disabled {
   background-color: #999999;
   cursor: not-allowed;
   opacity: 0.7;
 }
 
-/* === Erros === */
+/* === Error Messages === */
+/* Styled error box with red border and background, padding and rounded corners */
 .error-box {
   background-color: #fff3f3;
   border-left: 5px solid #ff4d4f;
@@ -72,9 +81,10 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  animation: fadeIn 0.3s ease-in-out;
+  animation: fadeIn 0.3s ease-in-out; /* Smooth fade-in animation */
 }
 
+/* Header of error box with bold text and an icon before the title */
 .error-box h4 {
   margin: 0;
   font-size: 1.1rem;
@@ -84,18 +94,20 @@ h1 {
   gap: 0.5rem;
 }
 
+/* Warning icon before error title */
 .error-box h4::before {
   content: "⚠️";
   font-size: 1.2rem;
 }
 
+/* Paragraph styling inside error box */
 .error-box p {
   margin: 0;
   line-height: 1.4;
   font-size: 0.95rem;
 }
 
-/* Animação opcional para suavidade */
+/* === Optional animation for smooth fade-in effect === */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -107,21 +119,172 @@ h1 {
   }
 }
 
-/* === Resultados === */
+/* === Results Display === */
+/* Container styling for displaying results with light background and padding */
 .resultContainer {
   background-color: #f0f0f0;
   padding: 1rem;
   border-radius: 4px;
-  white-space: pre-wrap;
-  word-break: break-word;
+  white-space: pre-wrap; /* Preserve whitespace and allow wrapping */
+  word-break: break-word; /* Break long words if necessary */
 }
 
-/* === Imagem gerada === */
+/* === Generated Image Preview === */
+/* Center-align the container and add spacing on top */
 .imagePreview {
   text-align: center;
   margin-top: 1rem;
 }
 
+/* Image styling: responsive max width, border, padding and rounded corners */
+.imagePreview img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  background-color: #fff;
+  border-radius: 4px;
+}
+/* === Layout === */
+/* Basic page body styling: reset margin, set font, background and text color */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+  color: #333;
+}
+
+/* Container for the main page content, centered with max width and padding */
+.pageContainer {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* === Headings === */
+/* Center align main headings and add spacing below */
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* === Forms === */
+/* Styling for input fields to fill width, with padding and border */
+.inputField {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+/* === Buttons === */
+/* Container to horizontally align buttons with spacing */
+.buttonGroup {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Primary button style: padding, font, background, color, rounded corners */
+.buttonPrimary {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background-color: #0052cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Darker background on hover for button */
+.buttonPrimary:hover {
+  background-color: #003d99;
+}
+
+/* Disabled button style: greyed out and cursor not-allowed */
+.buttonPrimary:disabled {
+  background-color: #999999;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* === Error Messages === */
+/* Styled error box with red border and background, padding and rounded corners */
+.error-box {
+  background-color: #fff3f3;
+  border-left: 5px solid #ff4d4f;
+  color: #b00020;
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+  box-shadow: 0 2px 6px rgba(255, 77, 79, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  animation: fadeIn 0.3s ease-in-out; /* Smooth fade-in animation */
+}
+
+/* Header of error box with bold text and an icon before the title */
+.error-box h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Warning icon before error title */
+.error-box h4::before {
+  content: "⚠️";
+  font-size: 1.2rem;
+}
+
+/* Paragraph styling inside error box */
+.error-box p {
+  margin: 0;
+  line-height: 1.4;
+  font-size: 0.95rem;
+}
+
+/* === Optional animation for smooth fade-in effect === */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === Results Display === */
+/* Container styling for displaying results with light background and padding */
+.resultContainer {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 4px;
+  white-space: pre-wrap; /* Preserve whitespace and allow wrapping */
+  word-break: break-word; /* Break long words if necessary */
+}
+
+/* === Generated Image Preview === */
+/* Center-align the container and add spacing on top */
+.imagePreview {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Image styling: responsive max width, border, padding and rounded corners */
 .imagePreview img {
   max-width: 100%;
   height: auto;
