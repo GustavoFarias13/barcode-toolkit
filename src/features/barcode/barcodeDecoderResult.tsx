@@ -1,4 +1,4 @@
-import type {BarcodeDecodedResponse} from "../types/barcodeTypes.ts";
+import type {BarcodeDecodedResponse} from "../../types/barcodeTypes.ts";
 
 interface Props {
     data: BarcodeDecodedResponse;

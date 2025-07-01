@@ -1,4 +1,4 @@
-import BarcodePage from "./features/pages/barcodePage.tsx";
+import BarcodePage from "./features/barcode/barcodePage.tsx";
 
 function App() {
   return <BarcodePage />;
